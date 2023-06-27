@@ -75,28 +75,28 @@
   </section>
  
   <script>
-      lpTag.identities.push(identityFn);
-      function identityFn(callback) {
-        callback({
-          "sub": "+972-3-5555-555",
-          "iss": "https://jwt.io/",
-          "aud":"acc:qa57221676",
-          "exp": 1992025992,
-          "iat": 1682030954,
-          "acr": "loa1"
-      });
-    }
+    //   lpTag.identities.push(identityFn);
+    //   function identityFn(callback) {
+    //     callback({
+    //       "sub": "+972-3-5555-555",
+    //       "iss": "https://jwt.io/",
+    //       "aud":"acc:qa57221676",
+    //       "exp": 1992025992,
+    //       "iat": 1682030954,
+    //       "acr": "loa1"
+    //   });
+    // }
 
-    var id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWaXNoYWwgQ2hhdmFuIC04MjU4MTgiLCJpc3MiOiJodHRwczovL2p3dC5pby8iLCJhdWQiOiJhY2M6cWE1NzIyMTY3NiIsImV4cCI6MTk5MjAyNTk5MiwiaWF0IjoxNjgyMDMwOTU0LCJhY3IiOiJsb2ExIn0.AxxJxunWxIKT6wVfNACcKs75O2Cd96p8xGD69uWyYqKeeigtPH7fusUjUULVdbx-xpU9FJ_wKRTHB6_AwuXzT8enKQ7-eRO-kBhAgKwNTl1vdfQsdAAKb_g0B01XJab2nGCcxJi17h3oec-VOKl3C2cU3ETREEWOsJntpEM_WyiAQ-uwJFXIrDn6jkqEzobx-aKaVwACYdLk46RO6J0u_Ott0U1w6lv4OC1W6EFYEKcmVf8EFABSxNMod_azV4CiJWc_CM-fu0th9G-RXIioqkgLNsUyXE8CWHpr1i7zdbYSrliyAZYruRSXFXy61Tag0JkE4hLEQpPGlxQcRRzEzA"
+    // var id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWaXNoYWwgQ2hhdmFuIC04MjU4MTgiLCJpc3MiOiJodHRwczovL2p3dC5pby8iLCJhdWQiOiJhY2M6cWE1NzIyMTY3NiIsImV4cCI6MTk5MjAyNTk5MiwiaWF0IjoxNjgyMDMwOTU0LCJhY3IiOiJsb2ExIn0.AxxJxunWxIKT6wVfNACcKs75O2Cd96p8xGD69uWyYqKeeigtPH7fusUjUULVdbx-xpU9FJ_wKRTHB6_AwuXzT8enKQ7-eRO-kBhAgKwNTl1vdfQsdAAKb_g0B01XJab2nGCcxJi17h3oec-VOKl3C2cU3ETREEWOsJntpEM_WyiAQ-uwJFXIrDn6jkqEzobx-aKaVwACYdLk46RO6J0u_Ott0U1w6lv4OC1W6EFYEKcmVf8EFABSxNMod_azV4CiJWc_CM-fu0th9G-RXIioqkgLNsUyXE8CWHpr1i7zdbYSrliyAZYruRSXFXy61Tag0JkE4hLEQpPGlxQcRRzEzA"
     
-    function lpGetAuthenticationToken(callback) {
-            console.log("LP asked for id_token or auth code in Code Flow");
-            // Do your magic…
-            // On Success
-            callback(id_token);
-            // On Failure
-            callback("", "error reason");
-        }
+    // function lpGetAuthenticationToken(callback) {
+    //         console.log("LP asked for id_token or auth code in Code Flow");
+    //         // Do your magic…
+    //         // On Success
+    //         callback(id_token);
+    //         // On Failure
+    //         callback("", "error reason");
+    //     }
 
     // EVENT LISTNER CART VALUE
      
