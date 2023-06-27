@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="style.css" rel="stylesheet" />
+
+    
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <title>Jewellery Shop</title> 
+
+    <!-- BEGIN LivePerson Monitor.NEW -->
+<script type="text/javascript">window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'9994318'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;</script>
+<!-- END LivePerson Monitor.NEW -->
+</head>
+<body>
+
+
+
+</div>
+  <!--Header-->
+  <header>
+
+    <!-- Nav -->
+    <div class="nav container">
+      <a href="#" class="logo">Jewellery Shop</a>
+      <!--Cart-Icon-->
+      <span class="cartRate"> Cart Total </span>
+      <span id='cartValue'>0</span>
+      <span id="totalCost">0</span> <!--HIDDEN-->
+      <input id="totalCost" type="hidden" name="totalCost" value="0">
+      <i class='bx bx-shopping-bag' id="cart-icon"></i>
+    </div>
+        
+  </header>
+  <!--Shop-->
+  <section class="shop container">
+<!--     <h2 class="section-title">Shop Products</h2> -->
+    <!--Content-->
+    <div class="shop-content">
+      <!--Box-1-->
+      <div class="product-box">
+        <img src="img/product1.jpg" alt="" class="product-img">
+        <h2 class="product-title">Ring</h2>
+        <span class="price"> ₹ 30,000</span>
+        <p><button id="addToCart1">Add to Cart</button></p>
+      </div>
+      <!--Box-2-->
+      <div class="product-box">
+        <img src="img/product2.jpg" alt="" class="product-img">
+        <h2 class="product-title">NeckLace</h2>
+        <span class="price"> ₹ 40,000</span>
+        <p><button id="addToCart2">Add to Cart</button></p>
+      </div>
+      <!--Box-3-->
+      <div class="product-box">
+        <img src="img/product3.jpg" alt="" class="product-img">
+        <h2 class="product-title">Earrings</h2>
+        <span class="price"> ₹ 20,000</span>
+        <p><button id="addToCart3">Add to Cart</button></p>
+      </div>
+      <!--Box-4-->
+      <div class="product-box">
+        <img src="img/product4.jpg" alt="" class="product-img">
+        <h2 class="product-title">Gold Biscuit</h2>
+        <span class="price"> ₹ 70,000</span>
+        <p><button id="addToCart4">Add to Cart</button></p>
+      </div>
+    </div>
+  </section>
+ 
+  <script>
+      lpTag.identities.push(identityFn);
+      function identityFn(callback) {
+        callback({
+          "sub": "+972-3-5555-555",
+          "iss": "https://jwt.io/",
+          "aud":"acc:qa57221676",
+          "exp": 1992025992,
+          "iat": 1682030954,
+          "acr": "loa1"
+      });
+    }
+
+    var id_token = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWaXNoYWwgQ2hhdmFuIC04MjU4MTgiLCJpc3MiOiJodHRwczovL2p3dC5pby8iLCJhdWQiOiJhY2M6cWE1NzIyMTY3NiIsImV4cCI6MTk5MjAyNTk5MiwiaWF0IjoxNjgyMDMwOTU0LCJhY3IiOiJsb2ExIn0.AxxJxunWxIKT6wVfNACcKs75O2Cd96p8xGD69uWyYqKeeigtPH7fusUjUULVdbx-xpU9FJ_wKRTHB6_AwuXzT8enKQ7-eRO-kBhAgKwNTl1vdfQsdAAKb_g0B01XJab2nGCcxJi17h3oec-VOKl3C2cU3ETREEWOsJntpEM_WyiAQ-uwJFXIrDn6jkqEzobx-aKaVwACYdLk46RO6J0u_Ott0U1w6lv4OC1W6EFYEKcmVf8EFABSxNMod_azV4CiJWc_CM-fu0th9G-RXIioqkgLNsUyXE8CWHpr1i7zdbYSrliyAZYruRSXFXy61Tag0JkE4hLEQpPGlxQcRRzEzA"
+    
+    function lpGetAuthenticationToken(callback) {
+            console.log("LP asked for id_token or auth code in Code Flow");
+            // Do your magic…
+            // On Success
+            callback(id_token);
+            // On Failure
+            callback("", "error reason");
+        }
+
+    // EVENT LISTNER CART VALUE
+     
+     document.addEventListener('DOMContentLoaded', function() {
+      var cartValueElement = document.getElementById('cartValue'); //ZERO
+      var totalCostElement = document.getElementById('totalCost'); //ZERO
+      var addButton1 = document.getElementById('addToCart1');
+      var addButton2 = document.getElementById('addToCart2');
+      var addButton3 = document.getElementById('addToCart3');
+      var addButton4 = document.getElementById('addToCart4');
+      
+        
+      addButton1.addEventListener('click', function() {
+        console.log("CartVALUE"+cartValueElement.innerHTML);
+        var currentCartValue = parseInt(cartValueElement.innerHTML);
+        var newCartValue = currentCartValue + 1;
+        cartValueElement.innerHTML = newCartValue;////
+
+        console.log("CostVALUE"+totalCostElement.innerHTML);
+        var currentCostValue = parseInt(totalCostElement.innerHTML);
+        var newtotalCost = currentCostValue+30000;
+        totalCostElement.innerHTML = newtotalCost;        
+        myFunctionSelect();
+      });
+
+      addButton2.addEventListener('click', function() {
+        console.log(cartValueElement.innerHTML);
+        var currentCartValue = parseInt(cartValueElement.innerHTML);
+        var newCartValue = currentCartValue + 1;
+        cartValueElement.innerHTML = newCartValue;
+
+        console.log("CostVALUE"+totalCostElement.innerHTML);
+        var currentCostValue = parseInt(totalCostElement.innerHTML);
+        var newtotalCost = currentCostValue+40000;
+        totalCostElement.innerHTML = newtotalCost;        
+        myFunctionSelect();
+      });
+
+      addButton3.addEventListener('click', function() {
+        console.log(cartValueElement.innerHTML);
+        var currentCartValue = parseInt(cartValueElement.innerHTML);
+        var newCartValue = currentCartValue + 1;
+        cartValueElement.innerHTML = newCartValue;
+
+        console.log("CostVALUE"+totalCostElement.innerHTML);
+        var currentCostValue = parseInt(totalCostElement.innerHTML);
+        var newtotalCost = currentCostValue+20000;
+        totalCostElement.innerHTML = newtotalCost;        
+        myFunctionSelect();
+      });
+
+      addButton4.addEventListener('click', function() {
+        console.log(cartValueElement.innerHTML);
+        var currentCartValue = parseInt(cartValueElement.innerHTML);
+        var newCartValue = currentCartValue + 1;
+        cartValueElement.innerHTML = newCartValue;
+
+        console.log("CostVALUE"+totalCostElement.innerHTML);
+        var currentCostValue = parseInt(totalCostElement.innerHTML);
+        var newtotalCost = currentCostValue+70000;
+        totalCostElement.innerHTML = newtotalCost;        
+        myFunctionSelect();
+      });
+
+
+    
+    });
+
+        ///SDE PUSH TOTAL CART VALUE
+    function myFunctionSelect() {
+      
+      const title = document.title;
+      let x = document.getElementById("cartValue").innerHTML;
+      let y = Number(x);
+      console.log(y);
+
+      
+      lpTag.sdes = lpTag.sdes||[];
+      lpTag.sdes.push(
+        {
+          "type": "cart",  //MANDATORY
+          "total":document.getElementById("totalCost").innerHTML,
+          "currency":"INR",
+          "numItems":y,
+          "products":[{
+            "product":{
+              "name":"Page Title: "+title,
+              "category":" "
+              
+            },
+          }]
+   }
+);
+    }
+          
+  </script>
+</body> 
+</html>
+
+
